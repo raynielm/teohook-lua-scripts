@@ -5,7 +5,7 @@ if text:find("/") then
 cmd = text:gsub("/", "")
 if cmd:find("warp ") then
 world = cmd:gsub("warp ", "")
-log("`9Rayniel#2423 is cool.`1 warping to:`5 "..world.."`4...")
+log("``1 warping to:`5 "..world.."`4...")
 sendPacket(false, "action|join_request\nname|"..world, 3)
 return true
 end
